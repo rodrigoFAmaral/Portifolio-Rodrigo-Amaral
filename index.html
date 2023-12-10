@@ -15,39 +15,84 @@
 
     <title>Portfólio Rodrigo Amaral</title>
   </head>
+
   <body>
     <header>
       <div class="navbar">
         <div class="logo"><a href="#">Rodrigo Amaral</a></div>
         <ul class="links">
-          <li><a href="home">Home</a></li>
-          <li><a href="sobremim">Sobre Mim</a></li>
-          <li><a href="projects">Projetos</a></li>
-          <li><a href="contact">Contato</a></li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">Sobre Mim</a></li>
+          <li><a href="#projects">Projetos</a></li>
+          <li><a href="#contact">Contato</a></li>
         </ul>
         <div class="toggle_btn">
           <i class="fa-solid fa-bars"></i>
         </div>
       </div>
       <div class="dropdown_menu">
-        <li><a href="home">Home</a></li>
-        <li><a href="about">Sobre Mim</a></li>
-        <li><a href="projects">Projetos</a></li>
-        <li><a href="contact">Contato</a></li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">Sobre Mim</a></li>
+        <li><a href="#projects">Projetos</a></li>
+        <li><a href="#contact">Contato</a></li>
       </div>
     </header>
 
-    <main>
-      <section id="home">
+    <main class="content">
+      <section class="home" id="home">
         <h1>Bem Vindo</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
-          delectus, dignissimos incidunt deserunt sint et cumque! Quae quidem,
-          nihil nam aperiam autem recusandae sint illum. Ullam veniam blanditiis
-          quo aut.
-        </p>
+      </section>
+
+      <section class="about" id="about">
+        <div>
+          <h1>Sobre Mim</h1>
+          <p>
+            Sou graduando do curso de engenharia de software, da Universidade de
+            Brasilia (UnB). Antes de entrar na universidade, fiz parte de uma
+            equipe de robótica, na Cidade de Taubaté-SP,
+            <a href="https://www.instagram.com/taubatexas7459/"
+              ><span class="cor_link">Taubatexas Robotics #7459</span></a
+            >
+            , pela qual participei de várias competições, inclusive fora do
+            Brasil. Comecei a estudar programação aos 11 anos, focando na de
+            jogos. Falo inglês fluentemente. Como hobby, gosto de ler mangás,
+            jogar videogames e viajar.
+          </p>
+        </div>
+        <div class="about-img">
+          <img src="images/foto_sobre.png" />
+        </div>
+      </section>
+
+      <section class="projects" id="projects">
+        <div>
+          <h1>Projetos</h1>
+          <p>
+            Essa parte está um pouco vazia não! <br />
+            <i class="fa-solid fa-ghost"></i> <br />
+            Projetos ainda estão por vir
+          </p>
+        </div>
       </section>
     </main>
+
+    <footer>
+      <section class="contact" id="contact">
+        <h1>Contatos</h1>
+        <hr />
+        <div class="social">
+          <div class="links">
+            <a href="https://github.com/rodrigoFAmaral"
+              ><i class="fa-brands fa-github"></i> GitHub</a
+            >
+            <a href="#"
+              ><i class="fa-solid fa-envelope"></i> G-mail:
+              rodrigoamaral1705@gmail.com</a
+            >
+          </div>
+        </div>
+      </section>
+    </footer>
 
     <script>
       const toggleBtn = document.querySelector(".toggle_btn");

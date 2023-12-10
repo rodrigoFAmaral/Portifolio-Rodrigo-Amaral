@@ -7,11 +7,16 @@
 }
 
 body {
-  height: 100vh;
-  background-color: white;
-  background-image: url("");
+  background-color: #f3e8e8;
   background-size: cover;
   background-position: center;
+  display: flex;
+  flex-direction: column;
+}
+
+body,
+html {
+  height: 100%;
 }
 
 li {
@@ -28,10 +33,20 @@ a:hover {
   color: #ffa500;
 }
 
-/*HEADER*/
 header {
-  position: relative;
+  position: fixed;
   padding: 0 2rem;
+  top: 0;
+  right: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #ffffff;
+}
+
+section {
+  padding: 50px 10%;
 }
 
 .navbar {
@@ -61,7 +76,6 @@ header {
   display: none;
 }
 
-/*MENU DROPDOWN*/
 .dropdown_menu {
   display: none;
   position: absolute;
@@ -86,23 +100,96 @@ header {
   justify-content: center;
 }
 
-/*HOME*/
-section#home{
-    height: calc(100vh - 60px);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: #000000;
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: normal;
+  justify-content: center;
+  text-align: left;
+  color: #000000;
 }
 
-#home h1{
-    font-size: 3rem;
-    margin-bottom: 1rem;
+.home h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #d88f08;
 }
 
-/*DESING RESPONSIVO*/
+.about {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.about h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.about p {
+  margin: 0.8rem 0 1rem;
+  line-height: 1.5;
+  text-align:justify;
+}
+
+.about-img img {
+  max-width: 400px;
+  max-height: 350px;
+  width: auto;
+  height: auto;
+  border-radius: 8px;
+}
+
+.cor_link {
+  color: #22419f;
+}
+
+.projects {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  padding: 10px 10%;
+}
+
+.projects h1 {
+  font-size: 2rem;
+}
+
+.projects p {
+  color: #808080;
+}
+
+.content {
+  flex: 1 0 auto;
+  padding: 100px;
+}
+
+footer {
+  padding: 0 1rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #ffffff;
+}
+
+.social {
+  display: flex;
+  text-align: right;
+  width: 100%;
+  height: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.social .links {
+  display: flex;
+  gap: 2rem;
+}
+
 @media (max-width: 992px) {
   .navbar .links {
     display: none;
@@ -115,9 +202,9 @@ section#home{
   }
 }
 
-@media (max-width: 576px){
-    .dropdown_menu{
-        left: 2rem;
-        width: unset;
-    }
+@media (max-width: 576px) {
+  .dropdown_menu {
+    left: 2rem;
+    width: unset;
+  }
 }
